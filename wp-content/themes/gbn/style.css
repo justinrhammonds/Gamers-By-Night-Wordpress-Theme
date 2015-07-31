@@ -1,0 +1,692 @@
+/*****************************************************************************
+Theme Name: Gamers By Night
+Theme URI: http://gamersbynight.com/
+Author: Justin Hammonds
+Author URI: http://justinhammonds.me/
+Description: The Gamers By Night Theme is a fully customized wordpress theme by Justin Hammonds. This theme was designed for the effeicient display and playback of podcasts, game reviews, general topics and commentary.
+Version: 1.0
+License: GNU General Public License
+License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
+This theme, like WordPress, is licensed under the GPL. 
+
+****************************************************************************/
+
+
+/*===========================================================================
+STYLE GUIDELINES:
+=============================================================================
+
+Font-Families:
+=============
+(Google Fonts)
+'Open Sans', sans-serif;
+    300, 400, 600, 700, 800 (available in italic 'style' also)
+'Orbitron', sans-serif;
+    400, 500, 700, 900
+'Special Elite', cursive;
+
+Background Texture:
+==================
+http://lea.verou.me/css3patterns/#carbon-fibre (modified colors)
+
+Colors Used:
+===========
+charcoal: #282828 (background)
+light grey: #b7b7b7 (text)
+white: #fff (hover)
+black: #000 
+goldenrod: #e38f37 (various headings)
+
+
+Section Ordering:
+=================
+1. GENERAL STYLING
+2. HEADER & NAV STYLING
+3. FOOTER STYLING
+4. HOME PAGE BANNER
+5. ABOUT PAGE STYLING
+6. CONTAINER STYLING
+7. CONTENT STYLING
+8. RIBBON STYLE BANNER
+9. NAV LINK UX
+10. HOVER EFFECTS
+
+=============================================================================
+GENERAL STYLING
+============================================================================*/
+
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+
+body {
+    
+    /* Background Texture===================================================*/
+    
+    background:
+        radial-gradient(#232323 15%, transparent 16%) 0 0,
+        radial-gradient(#232323 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255,255,255,.1) 10%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255,255,255,.1) 10%, transparent 20%) 8px 9px;
+    background-color: #282828;
+    background-size: 16px 16px;
+    
+    /*=====================================================================*/
+    
+    box-sizing: border-box;
+    color: #b7b7b7;  
+    display: table;
+    font-weight: 700;
+    letter-spacing:.035em;
+    padding-top: 60px;
+    text-align: center;
+    width: 100%;
+    
+}
+
+
+div {
+    display: block;
+    
+}
+
+
+p {
+    line-height: 1.7em;
+    
+}
+
+
+a {
+    color: #e38f37;
+    
+}
+
+
+/*===========================================================================
+HEADER & NAV STYLING
+===========================================================================*/
+
+
+header {
+    background: #1e1e1e;
+    background: rgba(30,30,30,.86);
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+}
+
+
+nav {
+    width: 100%;
+    
+}
+
+
+nav li {
+    float: left; 
+    font-size: .75em;
+    font-style: italic;
+    list-style: none;  
+    width: 25%;
+  
+}
+
+
+nav li a {
+    color: inherit;
+    text-decoration: none;
+
+}
+
+
+#nav-logo img {
+    width: 90px;
+    height: 30px;
+    position: relative;
+    bottom: 8px;
+    right: 15px;
+}
+
+
+
+/*===========================================================================
+FOOTER STYLING
+===========================================================================*/
+
+
+footer {
+    width: 100%;
+    
+}
+
+
+#social-media a,
+.social-profile a {
+    color: #b7b7b7;
+    text-decoration: none;
+    
+}
+
+
+#social-media li,
+.profile-icon li {
+    display: inline-block;
+    font-size: 2em; 
+    padding: 12px;
+
+}
+
+
+#social-media,                /* This fixes a slight mis-alignement */
+.social-profile {
+    position: relative;
+    right: 20px;
+    
+}
+
+
+#social-media li:hover,
+.profile-icon li:hover {
+    cursor: pointer;
+    
+}
+
+
+#footer-links {
+    clear: both;
+    font-size: .75em;
+
+}
+
+
+/*===========================================================================
+HOME PAGE BANNER
+===========================================================================*/
+
+
+#home-page-banner {
+    clear: both;
+    width: 100%;
+
+}
+
+
+.left-typed-box {
+    font-family: 'Special Elite', Arial Black, sans-serif;
+    height: 50px;
+    letter-spacing: .2em;
+    width: 100%;
+
+}
+
+
+#logo {
+    margin: 30px auto;
+    height: auto;
+    width: 80%;
+    max-width:350px;
+    
+}
+
+
+.right-typed-box {
+    bottom: 15px;
+    font-family:'Orbitron', Arial Black, sans-serif;
+    font-weight: 400;
+    height: 50px;
+    letter-spacing: .1em;
+    padding-bottom: 30px;
+    position: relative;
+    width: 100%;
+    
+}
+
+
+/*===========================================================================
+ABOUT PAGE STYLING
+===========================================================================*/
+
+
+#about-logo img {
+    height: auto;
+    margin: 30px auto;
+    width: 70%;
+    
+}
+
+
+.row {
+    width:100%;
+}
+
+
+.group:after {
+    clear: both;    
+    content: "";
+    display: table;
+
+}
+
+
+.profile-pic {
+    border: 8px solid grey;
+    border-radius: 50%;
+    height: auto;
+    max-width:300px;
+    width: 50%;
+    
+}
+
+
+.social-profile {
+    list-style: none;
+    margin-top: 30px;
+    
+}
+
+
+.about-name {
+    color: #e38f37;
+    display: block;
+    font-family: 'Orbitron',Arial Black, sans-serif;
+    letter-spacing: .1em;
+    margin-bottom: 0;
+    
+}
+
+
+.col p {
+    font-size: .75em;
+    margin: auto;
+    max-width: 400px;
+    padding: 0 25px 25px 40px;
+    text-align: left;
+
+}
+
+
+/*===========================================================================
+404 PAGE STYLING
+===========================================================================*/
+
+
+.title-404,
+.number-404,
+.message-404 {
+    clear: both;
+    display:block;
+    width: 100%;
+}
+
+.title-404 {
+    font: small-caps 900 1.5em 'Orbitron',Arial Black, sans-serif;
+}
+
+.number-404 {
+    font: 4.5em 'Special Elite',Arial Black, cursive;
+    color: #e38f37;
+
+}
+
+.message-404 {
+    font: .75em/1.5em 'Special Elite',Arial Black, cursive;
+    width: 80%;
+    padding: 2% 10%;
+    margin: 0 auto;
+    max-width: 400px;    
+}
+
+/*===========================================================================
+CONTAINER STYLING
+===========================================================================*/
+
+/*******************************************
+PODCAST PLAYER STYLING
+was implemented as 'inline styles' 
+in the file: content-podcast.php 
+*******************************************/
+
+
+#container,
+#youtube-container {
+    background: #171717;
+    background: rgba(0,0,0,.3);
+    margin: 10px auto 80px auto;
+    max-width: 1000px;
+    width: 80%;
+
+}
+
+
+#container {
+    clear: both;    
+    min-height: 275px;
+    padding-bottom: 10px;
+    
+}
+
+
+#youtube-container {
+    height: 320px;
+    
+}
+
+
+#youtube {
+    height: 200px;    
+    margin-top: 25px;
+    width: 96%;
+
+}
+
+
+.bottom-edge-shadow {    
+   -webkit-box-shadow: 0 12px 8px -8px black;
+   -moz-box-shadow: 0 12px 8px -8px black;
+   box-shadow: 0 12px 8px -8px black;	
+	        
+}
+
+
+.loop-container {
+    border-bottom: 1px dashed #b7b7b7;
+    margin: auto;
+    padding: 3% 5%;
+    width: 90%;
+    
+}
+
+
+/*===========================================================================
+CONTENT STYLING
+===========================================================================*/
+
+
+.title {
+    color: #b7b7b7;
+    font-style: italic;
+    float: left;
+    margin: 0;
+    padding-bottom: 5px;
+    text-align: left;
+    width: 100%;
+    
+}
+
+
+.meta-loop {
+    clear:both;
+    padding: 0;
+    
+}
+
+
+.genericon {
+    padding-left: 20px;
+    
+}
+
+
+.date {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding-left: 3px;
+    
+}
+
+
+.meta-loop li {
+    color: #b7b7b7;
+    float: left;
+    font-size: .75em;
+    list-style: none;
+    padding-right: 3px;
+ 
+}
+
+
+.excerpt-loop {
+    clear: both;
+    font-size:.75em;
+    font-style: normal;
+    line-height: 1.8em;
+    text-align: left;
+    
+}
+
+
+.loop-container aside {   /*Container for Podcast Player */
+    padding-top: 10px;
+    
+}
+
+#subscribe-link,
+#follow-link {
+    clear: both;
+    display:block;
+    font-family: 'Special Elite',Arial Black, cursive;
+    font-size: .9em;
+    
+}
+
+
+/*===========================================================================
+RIBBON-STYLE BANNER
+===========================================================================*/
+
+
+.ribbon {
+    background: #e38f37;
+    color: #fff;    
+    font-family: 'Orbitron',Arial Black, sans-serif;
+    font-size: .9em !important;
+      /*This ribbon is based on a 16px font size and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+    left: -4%;    
+    letter-spacing: .15em;
+    line-height: 30px;
+    margin: 10px auto 20px; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */    
+    padding: 1px 0;    
+    position: relative;
+    text-align: center;
+    top: 10px;     
+    width: 108%;
+    
+}
+
+
+.ribbon .ribbon-content:before, 
+.ribbon .ribbon-content:after {
+    border-color: #bb5d03 transparent transparent transparent;
+    border-style: solid;    
+    bottom: -.5em;
+    content: "";    
+    display: block;    
+    position: absolute;    
+    
+}
+
+
+.ribbon .ribbon-content:before {
+    border-width: .5em 0 0 .5em;    
+    left: 0;
+
+}
+
+
+.ribbon .ribbon-content:after {
+    border-width: .5em .5em 0 0;    
+    right: 0;
+
+}
+
+
+/*===========================================================================
+NAV LINK UX from http://ianlunn.github.io/Hover/
+===========================================================================*/
+
+/************************
+Underline from Center 
+************************/
+
+
+.hvr-underline-from-center {
+    backface-visibility: hidden;    
+    -webkit-backface-visibility: hidden;    
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0);    
+    display: inline-block;
+    -moz-osx-font-smoothing: grayscale;    
+    overflow: hidden;
+    padding-bottom: 3px;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);    
+    vertical-align: middle;
+ 
+}
+
+
+.hvr-underline-from-center:before {
+    background: #fff;    
+    bottom: 0;
+    content: "";
+    height: 3px;    
+    left: 50%;    
+    position: absolute;
+    right: 50%;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;  
+    -webkit-transition-property: left, right;
+    -moz-transition-property: left, right;
+    -o-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-timing-function: ease-out; 
+    -moz-transition-timing-function: ease-out; 
+    -o-transition-timing-function: ease-out; 
+    transition-timing-function: ease-out;
+    z-index: -1;
+
+}
+
+
+.hvr-underline-from-center:hover:before, 
+.hvr-underline-from-center:focus:before, 
+.hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+    
+}
+
+
+/*===========================================================================
+HOVER EFFECTS
+===========================================================================*/
+
+/**************
+Text Fade 
+**************/
+
+
+.hvr-fade {
+    -o-transition:color .15s ease-out, color .15s ease-in;
+    -ms-transition:color .15s ease-out, color .15s ease-in;
+    -moz-transition:color .15s ease-out, color .15s ease-in;
+    -webkit-transition:color .15s ease-out, color .15s ease-in;
+    transition:color .15s ease-out, color .15s ease-in;
+    
+}
+
+
+.hvr-fade:hover,
+.hvr-fade:focus,
+.hvr-fade:active {
+    color: #fff;
+    cursor: pointer;
+    -o-transition:color .15s ease-out, color .15s ease-in;
+    -ms-transition:color .15s ease-out, color .15s ease-in;
+    -moz-transition:color .15s ease-out, color .15s ease-in;
+    -webkit-transition:color .15s ease-out, color .15s ease-in;
+    transition:color .15s ease-out, color .15s ease-in;
+    
+}
+
+
+/************************
+Container Glow on Hover
+************************/
+
+
+.hvr-glow {
+    cursor: pointer;
+    -o-transition:color .15s ease-out, background .15s ease-in;
+    -ms-transition:color .15s ease-out, background .15s ease-in;
+    -moz-transition:color .15s ease-out, background .15s ease-in;
+    -webkit-transition:color .15s ease-out, background .15s ease-in;
+    transition:color .15s ease-out, background .15s ease-in;
+
+    
+}
+
+
+.hvr-glow:hover,
+.hvr-glow:active,
+.hvr-glow:focus {
+    background: #2f2f2f;
+    background: rgba(90,90,90,.45);
+    -o-transition:color .25s ease-out, background .25s ease-in;
+    -ms-transition:color .25s ease-out, background .25s ease-in;
+    -moz-transition:color .25s ease-out, background .25s ease-in;
+    -webkit-transition:color .25s ease-out, background .25s ease-in;
+    transition:color .2s ease-out, background .2s ease-in;
+
+}
+
+
+.hvr-glow div a {
+    color: inherit;
+    text-decoration: none;
+    
+}
+
+.hvr-glow .moretag {
+    color: #e38f37;
+    clear:both;
+    display:block;
+    padding-top: 10px;
+    text-decoration: underline;
+
+}
+
+
+/*****************************/
+
+
+/*****************************/
+
+.title-image {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+
+.with-image-col {
+    width: 100%;
+    float: left;
+}
+
+
+/********************************/
+
+

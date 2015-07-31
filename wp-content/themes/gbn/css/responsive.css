@@ -1,0 +1,260 @@
+/*=====================================
+Breakpoints:
+=======================================
+	480px - 569px
+	570px - 729px
+	730px - 767px
+	768px - 979px
+	980px - 1099px
+	1100px and higher
+
+
+/* 480px - 569px
+=============================================================================*/
+@media (min-width:480px) {
+
+
+	#youtube-container {
+		height: 420px;	
+	
+	}
+	
+	
+	#youtube {
+		height: 300px;
+		
+	}
+	
+
+}
+
+
+/* 570px - 729px
+=============================================================================*/
+@media (min-width:570px) {
+	
+	
+	#logo {
+		/*max-width: 400px;*/
+		
+	}
+
+	
+	#youtube-container {
+		height: 425px;	
+	
+	}	
+	
+	
+	.ribbon {
+		font-size: 1.2em !important;
+		left: -3%;
+		width: 106%;
+		
+	}
+
+	
+}
+
+
+/* 730px - 767px
+=============================================================================*/
+@media (min-width:730px) {
+	
+	
+	#youtube-container {
+		height: 530px;	
+	
+	}
+	
+	
+	#youtube {
+		height: 400px;
+		
+	}
+		
+	
+	.ribbon {
+		left: -2%;
+		width: 104%;
+		
+	}
+	
+	
+}
+
+
+/* 768px - 979px
+=============================================================================*/
+@media (min-width:776px) {
+
+
+	header {
+		height: 60px;
+		
+	}
+	
+	
+	nav li,
+	#footer-links,
+	.col p {
+		font-size: 1em;
+	 
+	}
+	
+	
+	#subscribe-link,
+	#follow-link {
+		font-size: 1.5em;
+		
+	}
+
+	
+	#nav-logo img {
+		bottom: 15px;
+	    height: 55px;
+	    width: 135px;
+		
+	}
+	
+	
+	#social-media li {
+		font-size: 3em;
+		
+	}
+	
+	
+	#about-logo img {
+		height:225px;
+		width: 675px;
+		
+	}
+	
+		
+	#container,
+	#youtube-container {
+		margin-bottom: 80px;
+		
+	}
+	
+	
+	.left-typed-box,
+	.right-typed-box {
+		font-size: 1.5em;
+		padding: 20px 0 80px 0;
+		
+	}
+
+
+	.with-image-col {
+	    float: left;
+	    padding-right: 2.5%;
+	    width: 45%;
+	    
+	}
+	
+
+	.title-404 {
+	    font: small-caps 900 3em 'Orbitron',Arial Black, sans-serif;
+	}
+	
+	.number-404 {
+	    font: 6.5em 'Special Elite',Arial Black, cursive;
+	    color: #e38f37;
+	
+	}
+	
+	.message-404 {
+	    font: 1.5em/2em 'Special Elite',Arial Black, cursive;
+	    width: 80%;
+	    padding-bottom: 2em;
+	    max-width: 800px;    
+	}
+
+	
+}
+
+
+/* 980px - 1099px
+=============================================================================*/
+@media (min-width:980px) {
+	
+	#youtube-container {
+		height: 680px;
+	
+	}
+	
+	
+	#youtube {
+		height: 550px;
+		
+	}
+	
+	
+	#container {
+	    min-height: 200px;
+	    
+	}
+	
+	
+	.excerpt-loop,
+	#footer-links {
+		font-size: 1em;
+	 
+	}
+	
+	.title {
+		font-size: 1.5em;
+		
+	}
+	
+
+}
+
+
+/* 1100px and higher
+=============================================================================*/
+@media (min-width:1100px) {
+
+	
+	#logo {
+		float: left;
+		max-width: 1000px;
+		margin: 75px 1.6666%;
+		width: 30%;
+
+	}
+	
+	
+	.ribbon {
+		left: -1%;
+		width: 102%;
+		
+	}
+	
+	
+	.left-typed-box,
+	.right-typed-box {
+		float: left;
+		font-size: 2em;
+		margin:150px 1.6666%;
+		width: 30%;
+
+	}
+	
+	
+	.about-row {
+		padding-top: 50px;
+		
+	}
+	
+	
+	.col {
+		float: left;
+		margin: 50px auto;
+		width: 50%;
+		
+	}
+	
+
+}
