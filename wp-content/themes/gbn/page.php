@@ -17,7 +17,7 @@
                     <h3 class="title"><?php the_title(); ?></h3>
                     
                     <ul class="meta-loop">
-                        <li class="avatar"><?php echo get_avatar( get_the_author_meta( 'ID' ), 24) ?></li>
+                        <li class="avatar"><?php echo get_avatar( get_the_author_meta( 'ID' )) ?></li>
                         <li>by <?php the_author(); ?></li>
                         <li class="genericon genericon-month"><?php the_time( 'F j, Y' ); ?></li>
                     </ul>

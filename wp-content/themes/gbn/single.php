@@ -24,20 +24,22 @@ get_header();
             
                 <div class="loop-container group">
                     
-                    <div>
-                        <img class="title-image" src="<?php echo $title_image ?>"  alt="Title Image" />
-                    </div>
+                    
                                     
                     <div>
                                                     
                         <ul class="meta-loop">
-                            <li class="avatar"><?php echo get_avatar( get_the_author_meta( 'ID' ), 24) ?></li>
+                            <li class="avatar"><?php echo get_avatar( get_the_author_meta( 'ID' )) ?></li>
                             <li>by <?php the_author(); ?></li>
                             <li class="genericon genericon-month"><span class="date"><?php the_time( 'F j, Y' ); ?></span></li>
                         </ul>
                         
                         <div class="excerpt-loop">
-                            <p>
+                          
+                                <p>
+                                <span class="title-image">
+                                    <img src="<?php echo $title_image ?>"  alt="Title Image" />
+                                </span>  
                                 <?php the_content(); ?>
                                 <?php previous_post_link('&laquo; &laquo; %link |'); ?>
                                 <a href="<?php print $_SERVER['HTTP_REFERER'];?>">Go back</a>
@@ -57,7 +59,7 @@ get_header();
                 <div class="loop-container">
                     
                     <ul class="meta-loop">
-                        <li class="avatar"><?php echo get_avatar( get_the_author_meta( 'ID' ), 24) ?></li>
+                        <li class="avatar"><?php echo get_avatar( get_the_author_meta( 'ID' )) ?></li>
                         <li>by <?php the_author(); ?></li>
                         <li class="genericon genericon-month"><span class="date"><?php the_time( 'F j, Y' ); ?></span></li>
                     </ul>
@@ -65,11 +67,24 @@ get_header();
                     <div class="excerpt-loop">
                         <p>
                             <?php the_content(); ?>
+                            <?php if (get_post_type() == 'podcast') : ?>
+                                <br>
+                                <span class="synopsis">
+                                    <?php the_field( 'synopsis' ); ?>
+                                </span>
+                                <br>
+                                <br>
+                                    
+                            <?php endif ?>
                             <?php previous_post_link('&laquo; &laquo; %link |'); ?>
                             <a href="<?php print $_SERVER['HTTP_REFERER'];?>">Go back</a>
-                            <?php next_post_link('| %link &raquo; &raquo;'); 
+                            <?php next_post_link('| %link &raquo; &raquo;');
                             ?>
-                            <?php comments_template(); ?>
+                            <?php 
+                                if (get_post_type() == 'podcast') { echo ""; }
+                                else {
+                                comments_template(); }
+                            ?>
                         </p>
                     </div>
                     

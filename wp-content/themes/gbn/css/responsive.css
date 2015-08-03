@@ -25,6 +25,12 @@ Breakpoints:
 		
 	}
 	
+	
+	.excerpt-loop iframe {
+		max-width: 400px;
+		
+	}
+	
 
 }
 
@@ -33,9 +39,8 @@ Breakpoints:
 =============================================================================*/
 @media (min-width:570px) {
 	
-	
-	#logo {
-		/*max-width: 400px;*/
+	body {
+		font-size: 1em;
 		
 	}
 
@@ -51,6 +56,14 @@ Breakpoints:
 		left: -3%;
 		width: 106%;
 		
+	}
+	
+	
+	.avatar {
+	    bottom:4px;
+	    height:35px;
+	    width:35px;
+	    
 	}
 
 	
@@ -144,31 +157,28 @@ Breakpoints:
 		padding: 20px 0 80px 0;
 		
 	}
-
-
-	.with-image-col {
-	    float: left;
-	    padding-right: 2.5%;
-	    width: 45%;
-	    
-	}
 	
 
 	.title-404 {
 	    font: small-caps 900 3em 'Orbitron',Arial Black, sans-serif;
+	    
 	}
+	
 	
 	.number-404 {
-	    font: 6.5em 'Special Elite',Arial Black, cursive;
 	    color: #e38f37;
+	    font: 6.5em 'Special Elite',Arial Black, cursive;
+
 	
 	}
+	
 	
 	.message-404 {
 	    font: 1.5em/2em 'Special Elite',Arial Black, cursive;
-	    width: 80%;
-	    padding-bottom: 2em;
-	    max-width: 800px;    
+	    max-width: 800px;
+	    padding-bottom: 2em;    
+	    width: 80%;	   
+	    
 	}
 
 	
@@ -203,8 +213,15 @@ Breakpoints:
 	 
 	}
 	
+	
 	.title {
 		font-size: 1.5em;
+		
+	}
+	
+	
+	.excerpt-loop iframe {
+		width: 500px;
 		
 	}
 	
@@ -219,8 +236,8 @@ Breakpoints:
 	
 	#logo {
 		float: left;
-		max-width: 1000px;
 		margin: 75px 1.6666%;
+		max-width: 1000px;
 		width: 30%;
 
 	}
@@ -254,6 +271,10 @@ Breakpoints:
 		margin: 50px auto;
 		width: 50%;
 		
+	}
+	
+	.title-image {
+		max-width: 400px;
 	}
 	
 
