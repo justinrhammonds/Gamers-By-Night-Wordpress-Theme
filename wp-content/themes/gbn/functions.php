@@ -67,4 +67,13 @@ function gbn_excerpt_length( $length ) {
 
 add_filter( 'excerpt_length', 'gbn_excerpt_length', 999);
 
+/// Add custom post types - reviews, articles and podcast to main RSS feed.
+function mycustomfeed_cpt_feed( $query ) {
+        if ( $query->is_feed() )
+            $query->set( 'post_type', array( 'podcast', 'reviews', 'articles' ) ); 
+        return $query;
+}
+
+add_filter( 'pre_get_posts', 'mycustomfeed_cpt_feed' );
+
 ?>
