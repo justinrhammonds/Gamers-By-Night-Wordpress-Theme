@@ -5,4 +5,4 @@ This project was an ambitious one as my first major undertaking while I was stil
 
 Here I've integrated with Wordpress for it's CMS potential while completely customizing the theme around which the content was displayed online. I've implemented some open source creative javascript snippets for some neat visual enhancements to the theme and as always with most of my early projects I've gone the extra mile trying to create a finished product that is fully responsive, cross-browser compatible and visually stunning. I even experiemented with Vector Illustration! 
 
-![Screenshot](./wp-content/themes/gbn/screenshot.png)
+![Screenshot](/wp-content/themes/gbn/screenshot.png)
