@@ -1,27 +1,6 @@
 Gamers By Night - Wordpress Theme
 =================================
 
-##Theme Details
+This project was an ambitious one as my first major undertaking while I was still teaching myself basics of coding back in 2015. The end result was a wordpress theme for a Gaming Podcast that I'd built for myself and a friend. 
 
-**Theme Name:** Gamers By Night
-
-**Theme URI:** http://gamersbynight.com/
-
-**Author:** Justin Hammonds
-
-**Author URI:** http://justinhammonds.me/
-
-**Description:** The Gamers By Night Theme is a fully customized wordpress theme by Justin Hammonds. This theme was designed for the effeicient display and playback of podcasts, game reviews, general topics and commentary.
-
-**Version: 1.0**
-
-**License: **GNU General Public License
-License URI: http://www.gnu.org/licenses/gpl-3.0.en.html
-This theme, like WordPress, is licensed under the GPL.
-
-Additional Resources
-====================
-
- * Carbon-Fibre CSS3 Background Texture (Lea Verou, Atle Mo - http://http://lea.verou.me/css3patterns/#carbon
- * Typed.js (Matt Boldt - http://www.mattboldt.com/demos/typed-js/
- * **Recommended Plugins** - Custom Post Type UI, Advanced Custom Fields, Seriously Simply Podcasting, SEO Yoast, WP Disqus.
+Here I've integrated with Wordpress for it's CMS potential while completely customizing the theme around which the content was displayed online. I've implemented some open source creative javascript snippets for some neat visual enhancements to the theme and as always with most of my early projects I've gone the extra mile trying to create a finished product that is fully responsive, cross-browser compatible and visually stunning. I even experiemented with Vector Illustration! 
